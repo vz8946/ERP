@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+.brand{ width:990px; margin:0 auto; overflow:hidden;}
+a:hover{color:#ED3E22;text-decoration:underline;}
+/* focus */
+.focus{width:990px;height:200px;float:left;position:relative; margin-bottom:10px;}
+.focus #pic{width:990px;height:200px;overflow:hidden;}
+.focus #pic ul{width:5950px;height:200px;float:left;}
+.focus #pic li{width:990px;height:200px;float:left;}
+.focus #pic li img{width:990px;height:200px;float:left;}
+.focus #tip{width:126px;height:14px;position:absolute;right:20px;bottom:7px;z-index:13;}
+.focus #tip ul li{width:14px;height:14px;float:left;display:inline;margin:0 5px;cursor:pointer;background:url(../images/focus_tip.png) no-repeat;}
+.focus #tip ul li.current{background:url(../images/focus_tip_current.png) no-repeat;}
+
+.focus .show{display:block!important;}
+
+
+.brand_recommend{ width:973px; overflow:hidden; padding:10px 0 10px 15px;  border:1px solid #ececec; background:#fbfbfb;}
+.brand_recommend .title{ width:973px; height:26px;}
+.brand_recommend .title h2{ float:left; font-size:18px; font-family:"微软雅黑"; color:#313131; line-height:26px;}
+.brand_recommend .title span{ float:right; display:block;_width:270px; _width:300px; height:26px; margin-right:13px;}
+.brand_recommend .title span input{ float:left;width:188px; height:24px; border:1px solid #cccccc; padding:0 5px; line-height:24px; margin-right:10px; }
+.brand_recommend .list_img{ clear:both; margin-top:30px;}
+.brand_recommend .list_img li{ float:left; display:inline; width:118px; height:58px; border:1px solid #e5e5e5; margin:0 20px 20px 0; text-align:center; }
+.brand_recommend .list_img li.last,.brand_recommend .list_txt li.last{ margin-right:0;}
+.brand_recommend .list_img li a{ color:#565656;}
+.brand_recommend .list_txt li{ float:left; display:inline;width:120px; text-align:center; line-height:30px; margin-right:20px;}
+.brand_recommend .list_txt li a{ color:#565656;}
+.brand_sort{ width:990px; overflow:hidden; margin-top:10px;}
+.brand_sort .tab{ width:988px; height:38px; background:url(../images/bg_title.jpg) repeat-x; border:1px solid #eaeaea;}
+.brand_sort .tab li{ position:relative; float:left; display:inline; width:98px; height:38px; }
+.brand_sort .tab li a{ display:block;width:98px; height:38px; text-align:center; line-height:38px;color:#313131;}
+.brand_sort .tab li a:hover,.brand_sort .tab li.current a{ position:absolute; width:98px; border:1px solid #8fc700; border-top:3px solid #8fc700; border-bottom:0; top:-1px; left:-1px; text-decoration:none; font-weight:bold; z-index:10; background:#ffffff;} 
+.brand_sort .tab_con{ clear:both; width:973px; overflow:hidden; border:1px solid #8fc700; padding:15px 0 0 15px;}
+.brand_sort .tab_con li{ float:left; display:inline; width:120px; height:90px; margin:0 20px 20px 0;text-align:center;}
+.brand_sort .tab_con li img{border:1px solid #e5e5e5;}
+.brand_sort .tab_con li a{ text-align:center; line-height:30px; }
+.brand_sort .tab_con li.last{ margin-right:0;}
+.brand_sort .tab_con .find{ clear:both;}
+.brand_sort .tab_con .find h3{ color:#666666; font-size:14px; font-weight:bold;}
+.brand_sort .tab_con .find a{ display:block; float:left; background:url(../images/dot.jpg) left center no-repeat; padding-left:10px; margin-right:30px; line-height:48px;}
+.brand_sort .tab_con  dl{ width:940px; height:90px; padding-top:20px; border-bottom:1px solid #e7e7e7;}
+.brand_sort .tab_con  dt{ float:left; width:95px; text-align:center; font-size:14px; color:#666666; font-weight:bold; margin-right:25px;}
+.brand_sort .tab_con  dd{ float:left; width:120px; height:90px; margin:0 20px 0 0; text-align:center;}
+.brand_sort .tab_con  dd img{border:1px solid #e5e5e5;}
+.brand_sort .tab_con  dd a{text-align:center; line-height:30px;  }
+.brand_sort .tab_con  dd.last{ margin-right:0;}
+
+.shili{ width:990px; overflow:hidden; margin:10px 0 0;}
+.shili .title{ width:988px; height:39px; background:url(../images/bg_title.jpg) repeat-x; border:1px solid #eaeaea; line-height:39px; margin-bottom:5px;}
+.shili .title h2{ float:left; margin-left:15px; color:#313131; font-family:"微软雅黑"; font-size:18px;}
+.shili .title a{ float:right; margin-right:26px; color:#565656;}

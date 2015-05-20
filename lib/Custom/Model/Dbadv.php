@@ -1,0 +1,433 @@
+<?php
+
+class Custom_Model_Dbadv {
+    /**
+     * Zend_Db
+     * @var    Custom_Model_Db
+     */
+    protected $_dbadv = null;
+    /**
+     * Creates a db instance.
+     *
+     * @param  void
+     * @return void
+     */
+    public function __construct()
+    {
+        $this -> _dbadv = Zend_Registry::get('db');
+    }
+    
+    public function getAll($tbl_name,$where=array(),$col='*',$num=0,$ord=''){
+    
+        $col = explode(',', $col);
+    
+        $select = $this->_dbadv->select();
+        $select->from($tbl_name, $col);
+        $this->where($select,$where);
+        if($num>0){
+            $select->limit($num,0);
+        }
+    
+        if(!empty($ord)){
+            $select->order($ord);
+        }
+    
+        $list = $this->_dbadv->fetchAll($select);
+        return $list;
+    
+    }
+    
+    public function getLastInsertId(){
+        return $this -> _dbadv -> lastInsertId();
+    }
+    
+    /**
+     * 
+     *  $tbl = 'shop_order as o|o.*';
+     *   
+     *   $map = array();
+     *   $map['o.user_id'] = $user_id;
+     *   return $this->getAllWithLink($tbl, $links,$map);
+     *
+     * @param unknown_type $tbl
+     * @param unknown_type $links
+     * @param unknown_type $where
+     * @param unknown_type $num
+     * @param unknown_type $ord
+     * @return unknown
+     */
+    
+    public function getAllWithLink($tbl,$links = array(),$where=array(),$num=0,$ord=''){
+    
+        $exp_tbl = explode('|',$tbl);
+        $tbl_name = $exp_tbl[0];
+        $tbl_field = empty($exp_tbl[1]) ? '' : $exp_tbl[1];
+    
+        //数据列表
+        $db_select = $this->_dbadv->select();
+    
+        $db_select->from($tbl_name,explode(',',$tbl_field));
+    
+        //处理连接
+        if(!empty($links)){
+            foreach ($links as $k=>$v){
+    
+                $exp_k = explode('|', $k);
+                $exp_v = explode('|', $v);
+    
+                $join_where = $exp_v[0];
+                $join_field = empty($exp_v[1]) ? '' : $exp_v[1];
+                $exp_join_field = explode(',', $join_field);
+                $count_exp_k = count($exp_k);
+    
+                if($count_exp_k == 1){
+                    $db_select->joinLeft($exp_k[0],$join_where,$exp_join_field);
+                }elseif($count_exp_k == 2 && $exp_k[1] == 'l'){
+                    $db_select->joinLeft($exp_k[0],$join_where,$exp_join_field);
+                }else{
+                    $db_select->joinLeft($exp_k[0],$join_where,$exp_join_field);
+                }
+            }
+        }
+    
+        $this->where($db_select,$where);
+    
+        if(!empty($ord)){
+            $db_select->order($ord);
+        }
+
+        if(is_int($num)){
+            $db_select->limit($num,0);
+        }else{
+            if(strpos($num, ',')){
+                $arr_num = explode(',', $num);
+                $db_select->limit(intval($arr_num[1]),intval($arr_num[0]));
+            }else{
+                $db_select->limit(intval($num),0);
+            }                        
+        }
+        $list = $this->_dbadv->fetchAll($db_select);
+    
+        return $list;
+    }
+    
+    
+    
+    public function getRow($tbl_name,$where=array(),$col='*',$num=0,$ord=''){
+        $select = $this->_dbadv->select();
+        $select->from($tbl_name, $col);
+        $this->where($select,$where);
+        if($num>0){
+            $select->limit($num,0);
+        }
+    
+        if(!empty($ord)){
+            $select->order($ord);
+        }
+    	$t = $select->__toString();
+        $r = $this->_dbadv->fetchRow($select);
+
+        return $r;
+    }
+    
+    public function max($tbl_name,$col,$where=array()){
+        $select = $this->_dbadv->select();
+        $select->from($tbl_name, 'max('.$col.') as max');
+        $this->where($select,$where);
+        $r = $this->_dbadv->fetchRow($select);
+        return $r['max'];
+    }
+    
+    public function min($tbl_name,$col,$where=array()){
+        $select = $this->_dbadv->select();
+        $select->from($tbl_name, 'min('.$col.') as min');
+        $this->where($select,$where);
+        $r = $this->_dbadv->fetchRow($select);
+        return $r['min'];
+    }
+    
+    public function insert($tbl,$data){
+        $sql = "show columns from ".$tbl;
+        $rs = $this->_dbadv->execute($sql);
+        $list_col = $rs->fetchAll();
+        $arr_col = array();
+        foreach ($list_col as $k=>$v){
+            $arr_col[] = $v['Field'];
+        }
+    
+        foreach ($data as $k=>$v){
+            if(!in_array($k, $arr_col)) unset($data[$k]);
+        }
+    
+        if($this->_dbadv->insert($tbl, $data)){
+            return $this->_dbadv->lastInsertId();
+        }
+    
+        return false;
+    }
+    
+    public function update($tbl,$data,$where=array()){
+        $sql = "show columns from ".$tbl;
+        $rs = $this->_dbadv->execute($sql);
+        $list_col = $rs->fetchAll();
+        $arr_col = array();
+        foreach ($list_col as $k=>$v){
+            $arr_col[] = $v['Field'];
+        }
+    
+        foreach ($data as $k=>$v){
+            if(!in_array($k, $arr_col)) unset($data[$k]);
+        }
+    
+        $select = $this->_dbadv->select();
+        $select->from('some_table');
+        $this->where($select,$where);
+        $sql_where = $select->__toString();
+        $exp_sql_where = explode('WHERE', $sql_where);
+
+        if($this->_dbadv->update($tbl, $data,$exp_sql_where[1])){
+            return $data;
+        }
+        
+        return false;
+    
+    }
+    
+    public function isIn($tbl,$where){
+        $r = self::getRow($tbl,$where);
+        if(empty($r)) return false;
+        return true;
+    }
+    
+    public function count($tbl,$where){
+        $select = $this->_dbadv->select();
+        $select->from($tbl, 'count(*) as count');
+        $this->where($select,$where);
+        $r = $this->_dbadv->fetchRow($select);
+        return $r['count'];
+    }
+    
+    public function getListByPage(&$page,$tbl,$links = array(),$where=array(),$ord=''){
+    	
+        $ps = empty($page['ps']) ? 24 : $page['ps'];
+        $exp_tbl = explode('|',$tbl);
+        $tbl_name = $exp_tbl[0];
+        $tbl_field = empty($exp_tbl[1]) ? '' : $exp_tbl[1];
+    
+        $db_select = $this->_dbadv->select();
+        $db_select->from($tbl_name,'count(*) as count');
+        
+        //处理连接
+        if(!empty($links)){
+            foreach ($links as $k=>$v){
+    
+                $exp_k = explode('|', $k);
+                $exp_v = explode('|', $v);
+    
+                $count_exp_k = count($exp_k);
+                if($count_exp_k == 1){
+                    $db_select->joinLeft($exp_k[0],$exp_v[0]);
+                }elseif($count_exp_k == 2 && $exp_k[1] == 'l'){
+                    $db_select->joinLeft($exp_k[0],$exp_v[0]);
+                }else{
+                    $db_select->joinLeft($exp_k[0],$exp_v[0]);
+                }
+            }
+        }
+    
+        $this->where($db_select,$where);
+
+        $r = $this->_dbadv->fetchRow($db_select);
+        $total = $page['tcount'] = $r['count'];
+        $objPage = new Custom_Model_Page($total, $ps,10);
+        $page['pagenav'] = $objPage -> show();
+    
+        //数据列表
+        $db_select = $this->_dbadv->select();
+    
+        $db_select->from($tbl_name,explode(',',$tbl_field));
+    
+        //处理连接
+        if(!empty($links)){
+            foreach ($links as $k=>$v){
+    
+                $exp_k = explode('|', $k);
+                $exp_v = explode('|', $v);
+    
+                $join_where = $exp_v[0];
+                $join_field = empty($exp_v[1]) ? '' : $exp_v[1];
+                $exp_join_field = explode(',', $join_field);
+                $count_exp_k = count($exp_k);
+    
+                if($count_exp_k == 1){
+                    $db_select->joinLeft($exp_k[0],$join_where,$exp_join_field);
+                }elseif($count_exp_k == 2 && $exp_k[1] == 'l'){
+                    $db_select->joinLeft($exp_k[0],$join_where,$exp_join_field);
+                }else{
+                    $db_select->joinLeft($exp_k[0],$join_where,$exp_join_field);
+                }
+            }
+        }
+    
+        $this->where($db_select,$where);
+    
+        $db_select->limit($ps,($page['pn']-1)*$ps);
+    
+        if(!empty($ord)) $db_select->order($ord);
+    	
+        $list = $this->_dbadv->fetchAll($db_select);
+    
+        return $list;
+    }
+    
+    public function getAjaxListByPage(&$page,$tbl,$links = array(),$where=array(),$ord=''){
+    
+        $ps = empty($page['ps']) ? 24 : $page['ps'];
+        $page['pn'] = empty($page['pn']) ? 1 : $page['pn'];
+        $exp_tbl = explode('|',$tbl);
+        $tbl_name = $exp_tbl[0];
+        $tbl_field = empty($exp_tbl[1]) ? '' : $exp_tbl[1];
+    
+        $db_select = $this->_dbadv->select();
+    
+        $db_select->from($tbl_name,'count(*) as count');
+    
+        //处理连接
+        if(!empty($links)){
+            foreach ($links as $k=>$v){
+    
+                $exp_k = explode('|', $k);
+                $exp_v = explode('|', $v);
+    
+                $count_exp_k = count($exp_k);
+                if($count_exp_k == 1){
+                    $db_select->joinLeft($exp_k[0],$exp_v[0]);
+                }elseif($count_exp_k == 2 && $exp_k[1] == 'l'){
+                    $db_select->joinLeft($exp_k[0],$exp_v[0]);
+                }else{
+                    $db_select->joinLeft($exp_k[0],$exp_v[0]);
+                }
+            }
+        }
+    
+        $this->where($db_select,$where);
+        $r = $this->_dbadv->fetchRow($db_select);
+        $total = $page['tcount'] = $r['count'];
+    
+        //数据列表
+        $db_select = $this->_dbadv->select();
+    
+        $db_select->from($tbl_name,explode(',',$tbl_field));
+    
+        //处理连接
+        if(!empty($links)){
+            foreach ($links as $k=>$v){
+    
+                $exp_k = explode('|', $k);
+                $exp_v = explode('|', $v);
+    
+                $join_where = $exp_v[0];
+                $join_field = empty($exp_v[1]) ? '' : $exp_v[1];
+                $exp_join_field = explode(',', $join_field);
+                $count_exp_k = count($exp_k);
+    
+                if($count_exp_k == 1){
+                    $db_select->joinLeft($exp_k[0],$join_where,$exp_join_field);
+                }elseif($count_exp_k == 2 && $exp_k[1] == 'l'){
+                    $db_select->joinLeft($exp_k[0],$join_where,$exp_join_field);
+                }else{
+                    $db_select->joinLeft($exp_k[0],$join_where,$exp_join_field);
+                }
+            }
+        }
+    
+        $this->where($db_select,$where);
+    
+        $db_select->limit($ps,($page['pn']-1)*$ps);
+    
+        if(!empty($ord)) $db_select->order($ord);
+    
+        $list = $this->_dbadv->fetchAll($db_select);
+    
+        return $list;
+    }
+    
+    protected function where(&$select,$where,$debug = false){
+        if(empty($where)) return;
+        $where = (array)$where;
+        $arr_modifer = array(
+                'll'=>'like ?',
+                'rl'=>'like ?',
+                'l'=>'like ?',
+                'gt'=>'> ?',
+                'lt'=>'< ?',
+                'egt'=>'>= ?',
+                'elt'=>'<= ?',
+                'neq'=>'!= ?',
+                'eq'=>'= ?',
+                'in'=>'IN(?)'
+        );
+    
+        foreach ($where as $k=>$v){
+            $k = trim($k);
+            if(empty($k)) continue;
+            if(is_array($v) && empty($v)) continue;
+    
+            if(strpos($k, '|') !== false){
+    
+                $t = explode('|', $k);
+                $colname = $t[0];
+    
+                $flag_or = strpos($t[1], 'o') !== false ? true : false;
+                $modifyer = trim($t[1],'o');
+    
+                if(!array_key_exists($modifyer, $arr_modifer)) continue;
+    
+                if($modifyer == 'in'){
+                    if(!is_array($v)){
+                        $colvalue = explode(',', trim($v,','));
+                    }else{
+                        $colvalue = $v;
+                    }
+                }elseif($modifyer == 'll'){
+                    $colvalue = $v.'%';
+                }elseif($modifyer == 'rl'){
+                    $colvalue = '%'.$v;
+                }elseif($modifyer == 'l'){
+                    $colvalue = '%'.$v.'%';
+    
+                }else{
+                    $colvalue = $v;
+                }
+				
+                if($flag_or){
+                    $select->orWhere($colname.' '.$arr_modifer[$modifyer],$colvalue);
+                }else{
+                    $select->where($colname.' '.$arr_modifer[$modifyer],$colvalue);
+                }
+    
+            }elseif($k == '_sql'){
+                $select->where('('.$v.')');
+            }else{
+                $select->where($k.' = ?',$v);
+            }
+        }
+    
+    }
+    
+    public function delete($tbl,$where){
+    
+        $select = $this->_dbadv->select();
+        $select->from('some_table');
+        $this->where($select,$where);
+        $sql_where = $select->__toString();
+        $exp_sql_where = explode('WHERE', $sql_where);
+        return $this->_dbadv->delete($tbl,$exp_sql_where[1]);
+    
+    }
+	
+	public function fetchBySql($stmt_sql,$bind=array()){
+		return $result = $this->_dbadv->fetchAll($stmt_sql, $bind);
+	}
+    
+}

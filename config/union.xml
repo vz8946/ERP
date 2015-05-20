@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata>
+<cookie>
+	<name>u</name>
+	<expire>
+		<register>1</register>
+		<click>30</click>
+	</expire>
+</cookie>
+<mUnion>
+    <title>个人推广</title>
+    <proportion>15</proportion>
+    <payLimit>100</payLimit>
+</mUnion>
+<pUnion extends="mUnion">
+    <title>推广联盟</title>
+    <proportion>16</proportion>
+    <payLimit>100</payLimit>
+</pUnion>
+</configdata>

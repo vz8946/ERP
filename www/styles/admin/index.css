@@ -1,0 +1,65 @@
+
+*{ margin:0; padding:0;}
+li,ul{ list-style-type:none;}
+img{ border:none;}
+a{ text-decoration:none; color:#000;}
+a:hover{ text-decoration:underline; color:#003;}
+body{ font-family:"宋体" ; font-size:12px; background:url(../../images/admin/head-bg-line.jpg) repeat-x;}
+h1,h2,h3,h4,h5,h6{ font-size:12px;}
+
+.head{  height:107px; font-family:"微软雅黑"; font-size:14px; position:relative; background: url(../../images/admin/head-bg.jpg) no-repeat;     }
+.head-nav{   float:left; margin-top:45px;}
+.head-logo{ float:left;}
+.head-nav li{ display:block; float:left; width:70px; height:25px; background:url(/images/admin/button-on.jpg) no-repeat; margin-left:-1px; text-align:center; line-height:28px;}
+.head-nav li a{width:70px; height:25px; display:block;}
+.head-nav li a:hover{  background:url(/images/admin/button-hover.jpg) no-repeat; text-decoration:none; color:#FFF; }
+.head-nav-on{ background:url(/images/admin/button-hover.jpg) no-repeat; text-decoration:none; color:#FFF; }
+.tips{ position:absolute; top:4px; left:288px; color:#222222; font-size:12px;}
+.tips-right{ position:absolute; top:4px; left:875px; color:#222222; font-size:12px;}
+.tips-right a{ color:#222222;}
+.menu{position:absolute; top:77px; _top:82px; left:211px; color:#6f7071; font-size:12px; height:32px; line-height:32px; display:block; font-family:"宋体";}
+.menu span{ display:block;  height:32px; line-height:32px; float:left; margin-left:10px;}
+.menu-text{position:absolute; top:77px; _top:113px; left:420px; color:#6f7071; font-size:12px; height:32px; line-height:32px; display:block; font-family:"宋体";}
+.menu-right{position:absolute; top:77px; _top:117px; left:1031px; color:#6f7071; font-size:12px; height:32px; line-height:32px; display:block; font-family:"宋体";}
+.menu-right span{ display:block;  height:32px; line-height:32px; float:left; margin-left:10px;}
+
+#menu_iframe {
+    width: 190px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow:scroll; 
+    overflow-x:hidden;
+}
+
+#main_iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#admin_left {
+    width: 190px;
+    position: absolute;
+    top: 110px;
+    bottom: 0;
+    left: 0;
+    background: #f6f9fd;
+}
+
+#admin_right {
+    position: absolute;
+    top: 110px;
+    bottom: 0;
+    left: 190px;
+    right: 0;
+    border-left: 1px solid #9db3c5;
+}
+#admin_left .inner, #admin_right .inner {height: 100%; overflow:scroll; overflow-x:hidden;
+}

@@ -1,0 +1,1 @@
+java gfbank.payment.merchant.PLQuery >> /usr/payment/plquery.log  2>>/usr/payment/plquery_err.log &

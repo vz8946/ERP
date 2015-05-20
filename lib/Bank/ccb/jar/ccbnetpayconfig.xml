@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ccbnetpayconfig>
+    <commport>
+        <value>55500</value>
+    </commport>
+    <maxconn>
+        <value>5</value>
+    </maxconn>
+    <merpos>
+        <posid>559506322</posid>
+        <pubkey>30819d300d06092a864886f70d010101050003818b00308187028181008e3ccc6cd9d66f6f45dc995f0515c1df19bfc4196a4dfc0bc0ff833d33836abc12b4071ea264c8ec885a8334852c6185bd4ee3771801ad9bddecbcbe4742f79f89d0e3267014c50e5a877f1bc8f9aa5a2b94c5d5cf3d1618084ed04946ce67777e9482bd037bc0c4c35b791c0159a5ffeec94e48b466285d94de593df19dd403020111</pubkey>
+    </merpos>
+</ccbnetpayconfig>

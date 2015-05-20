@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+.ad-focus  .JQ-slide-content{position:absolute;float: left; }
+.ad-focus  .JQ-slide-content li{float:left;zoom:1; overflow:hidden; vertical-align:text-top}
+.ad-focus   img { display:block;}
+.ad-focus  .JQ-slide-nav { position:absolute;left:10px; bottom:10px; height:18px; padding-top:2px; }
+.ad-focus  .JQ-slide-nav li {cursor:pointer;  background: none repeat scroll 0 0 #FFE0EB;border-radius: 8px 8px 8px 8px; cursor: pointer; float: left;  height: 8px; margin-right: 10px; overflow: hidden; position: relative;text-indent: -999px; width: 8px;}
+.ad-focus  .JQ-slide-nav li.on { background: none repeat scroll 0 0 #EB3C65;}
+.ad-focus  .JQ-slide-nav li img {display:block}
+
+

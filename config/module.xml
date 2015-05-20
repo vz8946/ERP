@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata>
+<shop>
+    <shop>../app/Shop/Controllers</shop>
+    <admin>../app/Admin/Controllers</admin>
+</shop>
+<api>
+    <api>../app/Api/Controllers</api>
+</api>
+<purchase>
+    <purchase>../app/Purchase/Controllers</purchase>
+</purchase>
+</configdata>

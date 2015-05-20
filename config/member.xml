@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata>
+<ranks>
+	<rank>
+	    <id>1</id>
+	    <name>普通会员</name>
+	    <discount>1</discount>
+	    <torank2>900</torank2>
+	    <torank3>4500</torank3>
+	    <torank4>9000</torank4>
+	</rank>
+	<rank>
+	    <id>2</id>
+	    <name>银卡会员</name>
+	    <discount>0.96</discount>
+	    <tjdiscount>0.96</tjdiscount>
+	    <torank3>3600</torank3>
+	    <torank4>8100</torank4>
+	    <backpoint>150</backpoint>
+	    <giftcard>50</giftcard>
+	</rank>
+	<rank>
+	    <id>3</id>
+	    <name>金卡会员</name>
+	    <discount>0.92</discount>
+	    <tjdiscount>0.96</tjdiscount>
+	    <torank4>4500</torank4>
+	    <backpoint>200</backpoint>
+	    <giftcard>100</giftcard>
+	</rank>
+	<rank>
+	    <id>4</id>
+	    <name>钻石会员</name>
+	    <discount>0.88</discount>
+	    <tjdiscount>0.96</tjdiscount>
+	    <backpoint>300</backpoint>
+	    <giftcard>200</giftcard>
+	</rank>
+</ranks>
+</configdata>

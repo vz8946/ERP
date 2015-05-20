@@ -1,0 +1,59 @@
+<!--首焦图-->
+<div id="ad_{{$ad_id}}" class="slideadv fl" style="height:{{$board.height}}px;width:{{$board.width}}px;overflow:hidden;">
+{{foreach from=$adlist item=item key=key}}
+		<div style="display:block; " class="adv">			
+			<a target="_blank"  href="{{$item.url}}">
+			 <img  aid="{{$item.id}}" alt="{{$item.desc}}" title="{{$item.desc}}" {{if $key eq 0}}src="{{$item.content}}"{{else}} _src="{{$item.content}}"{{/if}}  width="671"   height="370"  style="display: inline; opacity: 1; ">
+			</a>                       
+                        
+           <div class="index-focus-small" style="float: left;width: 295px;height: 358px;overflow: hidden;border: 1px solid #eee;">	
+           	{{foreach from=$item.extconfig item=sub}}	
+		    <div>			
+			<a target="_blank"  href="{{$sub.link}}" class="small_focus">
+			 <img  width="295"  height="120" {{if $key eq 0}} src="{{$sub.pic}}"  {{else}}  _src="{{$sub.pic}}" {{/if}} >
+			 <em></em>
+			 </a>
+		    </div>	
+		   {{/foreach}}
+	      </div>
+	</div>            
+{{/foreach}}     
+<div class="num">
+		<ul>
+		{{foreach from=$adlist item=item key=key}}
+			<li {{if $key eq 0}} class="cur" {{/if}}></li>
+		{{/foreach}}
+		</ul>
+</div>
+
+</div>
+
+<script>
+   
+	//图片轮换
+	len = $(".slideadv .adv").length;
+	$(".num ul li").mouseover(function(){
+		index  =   $(".num ul li").index(this);
+		showImg(index);
+		clearInterval(adTimer);
+		adTimer=null;
+	});
+	$(".num ul li").mouseout(function(){
+		go();
+	})
+	// 图片轮播---滑入 停止动画，滑出开始动画.
+	$('.slideadv a').hover(function(){
+			 clearInterval(adTimer);
+			 adTimer=null;
+		 },function(){
+			 go();
+	});
+	go();
+   
+	$("a.small_focus").hover(function(){
+		$("a.small_focus em").show();
+		$(this).find("em").hide();
+	},function(){
+		$("a.small_focus em").hide();
+	})
+</script>

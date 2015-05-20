@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/**抢购样式***/
+.btn-weixin{
+	position: relative;
+}
+
+.btn-weixin .code{
+	position: absolute;
+	top:-214px;
+	left:-50px;
+}
+
+.next-tuan .nt-h{
+    background: none repeat scroll 0 0 #317EE7;
+    color: #FFFFFF;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    font-family: "Microsoft YaHei";
+}
+
+.next-tuan .nt-c{
+	border: 1px solid #ddd;
+	border: 1px solid #ddd;
+	height: 251px;
+	padding:10px;
+	padding-top:5px;
+}
+
+.next-tuan .nt-h i{
+    background: url("/images/shop/icon_new.png") no-repeat scroll -150px -50px transparent;
+    display: block;
+    float: left;
+    height: 24px;
+    margin: 5px 10px 0 5px;
+    width: 24px;
+}
+
+.next-tuan .tip{
+	padding: 5px;
+}
+
+.next-tuan ul li .gi{
+	float: left;
+	margin-right:10px; 
+	width: 50px;
+	height: 50px;
+	padding:5px;
+	border: 1px solid #ddd;
+	text-align: center;
+	overflow: hidden;
+}
+
+.next-tuan ul li .ga{
+	height: 18px;
+}
+
+.next-tuan ul li{
+	
+}
+
+.tuan-goods{
+	width: 100%;
+	float: left;
+}
+.tuan-goods li{
+	float: left;
+	width: 444px;
+	overflow: hidden;
+	height: 270px;
+	text-align: center;
+	padding-right:5px;
+	color: #fff;
+}
+.tuan-goods li .inner{
+	height: 100%;
+	background: #8FC700;
+	position: relative;	
+	padding-right: 5px;
+}
+.tuan-goods li .gi{
+	float: left;
+	width: 282px;
+	height: 272px;
+	overflow: hidden;
+	margin-right: 10px;
+	z-index: 10;
+	background: #fff;
+}
+
+.tuan-goods li .ga{
+	font-size: 1.3em;
+	font-weight: bold;
+	height: 50px;
+	line-height: 70px;
+}
+
+.tuan-goods li .gt{
+	height: 70px;
+	padding-top:10px;
+}
+
+.tuan-goods li .gt a{
+	color: #fff;
+}
+
+.tuan-goods li .grp{
+	height:26px;
+	font-size: 2.0em;
+	text-align: left;
+}
+
+.tuan-goods li .gmp{
+	height:30px;
+	line-height:30px;
+	text-align: right;
+	text-decoration: line-through;
+}
+
+.tuan-goods li .go{
+	position: absolute;
+	height: 72px;
+	background: url('/images/shop/bg-tuan1.jpg') no-repeat bottom right;
+	width: 166px;
+	right: -5px;
+	bottom: 10px;
+}
+
+.tuan-goods li .wrp-btn{
+	height: 50px;
+	padding-top: 15px;
+	
+	
+}
+
+.tuan-goods li .wrp-btn a{
+	height: 36px;
+	line-height: 32px;
+	background: url('/images/shop/btn_qiangou.jpg') center;
+	color: #ff6600;
+	display: block;
+	width: 117px;
+	margin: 0px auto;
+	font-size: 15px;
+	text-decoration: none;
+	text-indent: -1000px;
+}
+
+.tuan-goods li .tip{
+	text-align: right;
+	padding-right: 10px;
+}
+
+
+.index-tuan .box .b-t{
+	background: #D9D9D9;
+    color: #666666;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+}	
+
+.index-tuan .box .b-c{
+	height: 270px;
+	border: 1px solid #ddd;
+}	
+
+.index-tuan .box .b-t-l{
+	display: block;
+	height: 100%;
+	background: #8FC700;
+	width: 225px;
+	color: #fff;
+	font-size: 1.3em;
+	font-family: "Microsoft YaHei";
+}	
+
+.index-tuan .box .b-t-l i{
+    background: url("/images/shop/icon_new.png") no-repeat scroll 0 -600px transparent;
+    display: block;
+    height: 24px;
+    margin: 7px 12px 0;
+    width: 22px;
+    float: left;
+}	
+.index-tuan .box .b-t-r{
+	padding-right:10px;
+}	
+
+#index-clock{
+	width: 300px;	
+}
+
+#index-clock p{
+	display: inline-block;
+}
+
+/**end抢购样式***/
+
+

@@ -1,0 +1,97 @@
+
+.cb {
+	clear: both;
+}
+
+
+.help-left{
+	float:left;
+	width:220px;
+	border:1px solid #d9dad8;
+	overflow:hidden;
+}
+.help-left .help-title{
+	background: #317EE7;
+    display: inline;
+    float: left;
+    height: 28px;
+    margin: 1px;
+    width: 220px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    font-size: 15px;
+}
+.help-left .help-parent-menu{
+	background: #F7F7F7;
+	background-position:0 -38px;
+    display: inline;
+    float: left;
+    height: 30px;
+    margin: 1px;
+    width: 220px;
+	line-height:30px;
+	font-size:14px;
+	color:#838181;
+	font-weight:bold;
+	padding-left:35px;
+}
+.help-left .help-child-menu{
+	float:left;
+	width:288px;
+	padding:5px 0;
+	border-bottom:1px solid #d9dad8;
+}
+.help-left .help-child-menu ul{
+	float:left;
+	padding-left:20px;
+	width:160px;
+}
+.help-left .help-child-menu ul li{
+	float:left;
+	height:24px;
+	line-height:2em;
+	width:140px;
+	overflow:hidden;
+}
+.help-ico{
+	float:left;
+	background: url("../img/help-sprite.png") no-repeat transparent;
+	background-position:-188px -6px;
+	height:14px;
+	width:16px;
+}
+.help-right{
+	float:right;
+	width:755px;
+	min-height:925px;
+	border:1px solid #d9dad8;
+}
+
+.help-right img{
+	max-width:710px;
+}
+
+.help-right .help-right-title{
+	float:left;
+	height:20px;
+	padding:10px 10px 10px 15px;
+	display:inline;
+	width:695px;
+	font-size:14px;
+	font-weight:bold;
+	color:#545454;
+	line-height:20px;
+
+}
+.help-right .help-right-conntent{
+	float:left;
+	padding:10px;
+	margin-left:10px;
+	display:inline;
+	padding-left:10px;
+	color:#595858;
+	line-height:20px;
+}
+
+.limitbuy_wrap{ width:710px; overflow:hidden;}

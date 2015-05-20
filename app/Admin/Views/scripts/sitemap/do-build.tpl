@@ -1,0 +1,1 @@
+<div style="margin:100px;line-height:50px;font-weight:700">{{if $buildOk}}<font color=green> sitemap.xml文件已经成功生成！</font>{{else}}<font color=red> 文件生成失败！ </font>{{/if}}</div>

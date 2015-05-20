@@ -1,0 +1,883 @@
+/** 登录界面 **/
+#login-content{
+	margin-top:15px;
+}
+#login-content .login-box{
+	float:left;
+	width:1000px;
+}
+#login-content .login-box .login-title{
+	float:left;
+	width:1000px;
+	height:30px;
+}
+#login-content .login-box .login-title .login-title-begin{
+	height:30px;
+	width:188px;
+	float:left;
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-3px -2px;
+}
+#login-content .login-box .login-title .login-title-center{
+	height:30px;
+	width:802px;
+	float:left;
+	background:url(../img/user-center.png) repeat-x transparent;
+	background-position:0 -36px;
+	padding:0 0;
+}
+#login-content .login-box .login-title .login-title-end{
+	height:30px;
+	width:10px;
+	float:left;
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-222px -2px;
+}
+.title-size{
+	font-size:14px;
+	font-weight:bold;
+	color:#339900;
+}
+title-span-size{
+	font-size:12px;
+}
+.login-list{
+	width:998px;
+	height:390px;
+	float:left;
+	border:1px solid #d9d9d9;
+	border-top:none;
+	margin-bottom:55px;
+}
+.login-from{
+	float:left;
+	width:472px;
+	margin-top:15px;
+	height:340px;
+	overflow:hidden;
+}
+.login-from-title{
+	border-bottom:1px solid #CCCCCC;
+	margin-bottom:5px;
+	margin-left:30px;
+	width:442px;
+	display:inline;
+	float:left;
+}
+.login-frame{
+	float:left;
+	height:260px;
+	width:470px;
+	padding:30px 20px;
+}
+.login-entry{
+	height:35px;
+	width:250px;
+	float:left;
+	padding: 16px 0;
+}
+.label{
+	float:left;
+	font-size:14px;
+	width:135px;
+	margin-top:20px;
+	text-align:right;
+}
+.lost-password{
+     float:left;
+	 font-size:12px;
+	 padding:25px 0 8px 10px;
+	 width:60px;
+	 }
+.input-text{
+	border:1px solid #BBBBBB;
+	height:15px;
+	padding:5px 3px;
+	width:248px;
+}
+.valitext{
+	border:1px solid #BBBBBB;
+	height:15px;
+	padding:5px 3px;
+	width:107px;
+}
+.input-text-r {
+    border: 1px solid #BBBBBB;
+    height: 16px;
+    padding: 4px 3px;
+    width: 200px;
+}
+.input-num {
+    border: 1px solid #BBBBBB;
+    height: 16px;
+    padding: 4px 3px;
+    width: 120px;
+	float:left;
+}
+.login-click{
+   float:left;
+   padding:0px 5px;
+   font-size:12px;
+}
+.click-a{
+   float:left;
+   font-size:12px;
+   font-family:"宋体";
+   color:#000000;
+   padding:5px 0;
+   width:90px;
+}
+.login-entry-ver{
+	height:35px;
+	width:320px;
+	float:left;
+	padding:16px 0;
+}
+.click-ver{
+    padding:5px 5px;
+	width：155px;
+	float:right;
+}
+.login-submit{
+    margin-top:20px;
+}
+.login-submit-img{
+    height:43px;
+	width:98px;
+    background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-2px -72px;
+	margin-left:144px;
+	display:inline;
+	float:left;
+	border:0;
+}
+#help-line{
+	height:10px;
+	width:100%;
+	margin-top:10px;
+	display:inline-block;
+	background:url(../img/global-sprite.png) repeat-x transparent;
+	background-position:0 -217px;
+}
+.login-center-img{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:0 -118px;
+	height:258px;
+	width:20px;
+	float:left;
+	margin-top:35px;
+	margin-left:50px;
+	display:inline;
+}
+.register-form{
+	float:left;
+	width:420px;
+	margin-top:15px;
+	height:340px;
+}
+.register-form-title{
+	border-bottom:1px solid #CCCCCC;
+	margin-bottom:5px;
+	margin-left:75px;
+	display:inline;
+	float:left;
+	width:320px;
+}
+.register-entry{
+	height:35px;
+	width:207px;
+	float:left;
+	padding: 12px 0;
+}
+.register-text{
+	border:1px solid #BBBBBB;
+	height:15px;
+	padding:5px 3px;
+	width:207px;
+}
+.register-frame{
+	height:290px;
+	width:400px;
+	margin-top:30px;
+	margin-left:10px;
+	display:inline;
+	float:left;
+}
+.register-submit{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-98px -72px;
+	height:43px;
+	width:98px;
+	float:left;
+	border:0;
+	margin-left:130px;
+	display:inline;
+}
+@import url("user.css");
+/** 注册界面 **/
+#register{
+	margin-top:15px;
+}
+#register .register-box{
+	float:left;
+	width:1000px;
+	height:333px
+}
+#register .register-box .register-title{
+	float:left;
+	width:1000px;
+	height:30px;
+}
+#register .register-box .register-title .register-begin{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-52px -212px;
+	height:30px;
+	width:163px;
+	float:left;
+}
+#register .register-box .register-title .register-center{
+	height:30px;
+	width:827px;
+	float:left;
+	background:url(../img/user-center.png) repeat-x transparent;
+	background-position:0 -36px;
+	padding:0 0;
+}
+#register .register-box .register-title .register-end{
+	height:30px;
+	width:10px;
+	float:left;
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-222px -2px;
+}
+#register .register-box .register-list{
+	width:998px;
+	height:248px;
+	float:left;
+	border:1px solid #d9d9d9;
+	border-top:none;
+	margin-bottom:55px;
+}
+#register .register-form{
+	height:150px;
+	width:700px;
+	padding:55px 105px 0px 218px;
+	float:left;
+}
+#register .register-box .register-list .register-img{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-215px -80px;
+	height:68px;
+	width:82px;
+	float:left;
+}
+#register .register-box .register-list .register-success{
+	height:80px;
+	width:508px;
+	float:left;
+	margin-left:20px;
+	display:inline;
+}
+#register .register-box .register-list .begin-button{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-50px -116px;
+	height:43px;
+	width:110px;
+	float:left;
+	margin-left:95px;
+	display:inline;
+}
+#register .register-box .register-list .health-button{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-50px -161px;
+	height:43px;
+	width:110px;
+	float:left;
+}
+#registerinfo{
+	margin-top:10px;
+}
+#registerinfo .registerinfo-box{
+    float:left;
+	width:1000px;
+	height:725px;
+	margin-bottom:55px;
+}
+#registerinfo .registerinfo-box .registerinfo-title{
+	float:left;
+	width:1000px;
+	height:30px;
+}
+#registerinfo .registerinfo-box .registerinfo-title .registerinfo-begin{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-52px -212px;
+	height:30px;
+	width:163px;
+	float:left;
+}
+#registerinfo .registerinfo-box .registerinfo-title .registerinfo-center{
+	height:30px;
+	width:827px;
+	float:left;
+	background:url(../img/user-center.png) repeat-x transparent;
+	background-position:0 -36px;
+	padding:0 0;
+}
+#registerinfo .registerinfo-box .registerinfo-title .registerinfo-end{
+	height:30px;
+	width:10px;
+	float:left;
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-222px -2px;
+}
+#registerinfo .registerinfo-box .registerinfo-list{
+	width:998px;
+	height:695px;
+	float:left;
+	border:1px solid #d9d9d9;
+	border-top:none;
+}
+#registerinfo .registerinfo-box .registerinfo-list .registerinfo-lform{
+	float:left;
+	display:block;
+	height:685px;
+	width:263px;
+	margin-top:11px;
+	margin-left:15px;
+	display:inline;
+}
+
+#registerinfo .registerinfo-center{
+	height:695px;
+	width:5px;
+	float:left;
+}
+#registerinfo .registerinfo-img{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-290px -128px;
+	height:286px;
+	width:5px;
+    float:left;
+}
+#registerinfo .registerinfo-img2{
+	background:url(../img/user-center2.png) repeat-y transparent;
+	background-position:-10px 0;
+	width:5px;
+	height:409px;
+	float:left;
+}
+#registerinfo .registerinfo-box .registerinfo-list .registerinfo-rform{
+	width:715px;
+	height:695px;
+	float:left;
+}
+#registerinfo .registerinfo-rform .registerinfo-title{
+	width:645px;
+	float:left;
+	display:inline;
+	margin-top:20px;
+	margin-left:70px;
+	font-weight:bold;
+}
+#registerinfo .registerinfo-rform .registerinfo-account{
+	height:250px;
+	width:715px;
+	float:left;
+	border-top:1px solid #e4e4e4;
+	border-bottom:1px solid #e4e4e4;
+	padding-top:10px;
+}
+#registerinfo .registerinfo-rform .registerinfo-bar{
+	width:590px;
+	float:left;
+	margin-bottom:10px;
+}
+#registerinfo .registerinfo-bar .registerinfo-label{
+	float:left;
+    font-size: 14px;
+    width: 125px;
+	height:25px;
+	text-align:right;
+}
+#registerinfo .registerinfo-bar  .symbol{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-242px 3px;
+	float:left;
+}
+#registerinfo .registerinfo-text{
+	width:250px;
+	height:25px;
+}
+#registerinfo .registerinfo-bar .registerinfo-entry{
+	width:465px;
+	float:left;
+}
+.textarea-valid{
+	border:1px solid #cccccc;
+	height: 90px;
+    width: 500px;
+}
+.tips{
+	font-size:12px;
+	color:#999999;
+}
+.registerinfo-tel{
+	padding-top:15px;
+	float:left;
+	width:715px;
+}
+.registerinfo-ver{
+	float:left;
+	width:715px;
+    border-top:1px solid #e4e4e4;
+	padding-top:15px;
+	height:298px;
+}
+.registerinfo-vercode{
+   float: left;
+    height: 45px;
+    margin-bottom: 10px;
+    width: 590px;
+}
+.accept{
+	height:40px;
+	width:590px;
+	float:left;
+	padding-left:125px;
+}
+.agreement{
+	margin-top:15px;
+	height: 105px;
+    width: 500px;
+	float:left;
+	margin-left:55px;
+}
+.agreement-textarea{
+	border: 1px solid #CCCCCC;
+    height: 90px;
+    width: 500px;
+}
+/** 用户中心 **/
+.mycenter-left{
+	float:left;
+	width:182px;
+}
+.mycenter-left .mycenter-leftbox{
+	border:1px solid #d9dad8;
+	float:left;
+	width:180px;
+	font-size:13px;
+	margin-top:10px;
+}
+.mycenter-left .mycenter-leftbox .mycenter-lefttitle{
+	padding: 10px 0 0 15px;
+}
+.green{
+	color:#349816;
+	font-weight:bold;
+}
+.mycenter-left .mycenter-leftimg{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-50px -247px;
+	width:177px;
+	height:35px;
+	float:left;
+}
+.mycenter-leftbac{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:0 -37px;
+	width:174px;
+	height:30px;
+	float:left;
+	margin-left:3px;
+	display:inline;
+}
+.mycenter-text{
+	font-size:13px;
+	color:#5a5959;
+}
+.mycenter-bactitle{
+	font-weight:bold;
+	padding-top:5px;
+	color:#838181;
+	text-align:center;
+}
+.mycenter-left .mycenter-account{
+	width:135px;
+	height:44px;
+	padding:13px 0 13px 45px;
+	float:left;
+}
+.mycenter-symbol{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-55px -283px;
+	height:13px;
+	width:16px;
+	float:left;
+}
+.mycenter-left .leftbox-two{
+	border-top:1px solid #d9dad8;
+	float:left;
+	width:180px;
+	font-size:13px;
+}
+.mycenter-left .account-two{
+	float:left;
+	width:80px;
+	height:17px;
+	padding:9px 45px;
+}
+.mycenter-right{
+	width:790px;
+    float:left;
+}
+.mycenter-right .mycenter-rightbox{
+	width:750px;
+	float:left;
+	border:1px solid #e6e6e6 ;
+	margin-top:10px;
+	margin-left:18px;
+	margin-bottom: 20px;
+}
+.right-text{
+	font-size:13px;
+	color:#5a5959;
+	padding:10px 0 0 25px;
+	height:190px;
+	float:left;
+	width:718px;
+}
+.text-two{
+	padding:0 30px;
+	height:40px;
+	float:left;
+	color:#5a5959;
+	font-size:13px;
+}
+.right-img{
+	background: url(../img/user-center.png) no-repeat transparent;
+	background-position:-55px -305px;
+	height:5px;
+	width:98px;
+	float:left;
+}
+.right-img2{
+	background: url(../img/user-center.png) repeat-x transparent;
+	background-position:0px -442px;
+	height:10px;
+	width:600px;
+	float:left;
+}
+.tablelist{
+	float:left;
+	width:700px;
+	padding-top:15px;
+}
+.submit-pay{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-190px -286px;
+	height:20px;
+	width:40px;
+	float:left;
+	margin-left:20px;
+	display:inline;
+	color:#FFF;
+	padding-left:11px;
+	margin-top:2px;
+	padding-top:1px;
+}
+.ordertd{
+	width:26%;
+	text-align:center;
+	height:26;
+	background:#F9F9F9;
+}
+.ordertd2{
+	text-align:center;
+	height:26;
+	background-color:#FFFFFF;
+}
+.ordertd3{
+	text-align:center;
+	height:26;
+	background-color:#FFFFFF;
+	color:#8B6C19;
+}
+.ordertable{
+	width:100%;
+    border:0;
+	border-spacing:1px;
+    padding:0;
+}
+.orderlist{
+    float:left;
+    padding-top:15px;
+	padding-left:15px;
+	display:inline;
+    width: 700px;
+}
+.ordertd26{
+	background-color:#F9F9F9;
+	width:26%;
+}
+.ordertd14{
+	background-color:#F9F9F9;
+	width:14%;
+}
+.ordertd22{
+	background-color:#F9F9F9;
+	width:22%;
+}
+.ordertd24{
+	background-color:#F9F9F9;
+	width:24%;
+}
+.height26{
+	text-align:center;
+	height:26px;
+}
+.coupon-text{
+	padding:10px 30px;
+	height:450px;
+	float:left;
+	color:#5a5959;
+	font-size:13px;
+}
+.text-title{
+    color:#838181;
+	font-weight:bold;
+	text-align:left;
+}
+.myorder-rightbox{
+	width:768px;
+	float:left;
+	border-top:1px solid #e6e6e6 ;
+	border-left:1px solid #e6e6e6 ;
+	border-right:1px solid #e6e6e6 ;
+	margin-top:10px;
+	margin-left:18px;
+	height:770px;
+}
+.mycollection-text{
+	float:left;
+	padding-left:15px;
+	line-height:30px;
+	width:685px;
+}
+
+/**个人信息**/
+.infobac{
+	background-color:#66b430;
+	height: 30px;
+    width: 768px;
+	float:left;
+}
+.infotitle-unselect{
+	text-align:center;
+	font-weight:bold;
+    color:#FFF;
+    cursor: pointer;
+}
+.infotitle-select{
+	color:#FFF;
+	font-weight:bold;
+	background-color:#285c03;
+	cursor: default;
+}
+.infobac ul li{
+    float:left;
+	padding:5px 5px;
+	display:inline;
+	height:20px;
+	width:90px;
+    font-size:14px;
+	text-align:center;
+}
+.myinfo-content{
+	float:left;
+	width:766;
+}
+.personalinfo-box{
+	float:left;
+	margin-top:20px;
+	margin-left:50px;
+	display:inline;
+}
+.personalinfo-title{
+	border-bottom:1px solid #2A9000;;
+	color:#2A9000;
+	float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 20px;
+    width: 500px;
+}
+.personalinfo-text{
+	float:left;
+	margin-top:20px;
+	display:inline;
+	width:620px;
+	font-size:14px;
+	padding:10px 30px;
+	color:#5A5959;
+	border-bottom:1px dashed #D8D8D8;
+}
+.change-info{
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+	width:500px;
+	font-size:13px;
+	color:#5A5959;
+}
+.changeinfo-text{
+	width:178px;
+	height:19px;
+	float:left;
+}
+.subsuccess{
+	background:url(../img/sprite-product.png) no-repeat transparent;
+	background-position:-5px -82px;
+	width:121px;
+	height:32px;
+	float:left;
+	border:none;
+	color:#FFF;
+	font-weight:bold;
+	font-size:14px;
+	cursor: pointer;
+}
+.laddresstd{
+	width:80px;
+	vertical-align:middle;
+	text-align:right;
+	float:left;
+}
+.raddresstd{
+	width:468px;
+	vertical-align:middle;
+	text-align:left;
+	float:left;
+}
+.chosesite{
+	width:110px;
+	height:20px;
+	text-align:center;
+	font-size:12px;
+	vertical-align:middle;
+}
+.baddresstd{
+	height:60;
+	border-top:1px dashed #ccc;
+	float:left;
+	width:100%;
+}
+.lsubmit{
+	background:url(../img/sprite-product.png) no-repeat transparent;
+	background-position:-30px -80px;
+	height:32px;
+	width:60px;
+	float:left;
+	border:0;
+	margin-top:20px;
+	margin-left:150px;
+	display:inline;
+	text-align:center;
+	color:#FFF;
+	cursor: pointer;
+}
+.rsubmit{
+	background:url(../img/sprite-product.png) no-repeat transparent;
+	background-position:-30px -80px;
+	height:32px;
+	width:60px;
+	float:left;
+	border:0;
+	margin-left:20px;
+	margin-top:20px;
+	display:inline;
+    text-align:center;
+	color:#FFF;
+	cursor: pointer;
+}
+.comment-box{
+	float:left;
+	width:700px;
+	padding-top:20px;
+	display:inline;
+}
+.orderid-title{
+	height:30px;
+	float:left;
+}
+
+.text-title-order-info-box{
+	float:right;
+	width:300px;
+	font-size:12px;
+	font-weight:300;
+	margin-top:15px;
+}
+.button-pay{
+	background:url(../img/user-center.png) no-repeat transparent;
+	background-position:-163px -165px;
+	width:106px;
+	height:35px;
+	float:right;
+	border:0;
+	cursor:pointer;
+}
+.text-title-order{
+	color: #838181;
+    font-weight: bold;
+    text-align: left;
+    width: 700px;
+	height:35px;
+}
+.paddingtop13px{
+	padding-top:13px;
+	float:left;
+}
+.height85px{
+	height:85px;
+	background-color:#FFFFFF;
+	vertical-align:middle;
+	text-align:center;
+}
+.order-paylist{
+	float:right;
+	width:280px;
+	padding-right:16px;
+	display:inline;
+}
+.order-paylist-box{
+	text-align:right;
+	border-bottom:1px solid #cccccc;
+	line-height:20px;
+	width:280px;
+	font-size:12px;
+}
+.gray{
+	color:#c1c1c1;
+}
+.order-paylist-paybox{
+	text-align:right;
+	line-height:20px;
+	width:280px;
+	font-size:12px;
+}
+.entry-succ {
+    background: url("../img/jquery-succtips.gif") no-repeat scroll 9px 50% #FFFFFF;
+    color: #408000;
+    line-height: 16px;
+    padding: 4px 0 4px 28px;
+}
+.entry-error {
+    background: url("../img/jquery-errortips.gif") no-repeat scroll 9px 50% #FFFFFF;
+    color: #CB4445;
+    line-height: 16px;
+    padding: 4px 0 4px 28px;
+}
+/** 用户中心 **/

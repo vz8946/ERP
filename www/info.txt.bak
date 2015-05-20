@@ -1,0 +1,654 @@
+Array
+(
+    [Code] => 00
+    [Desc] => 成功
+    [Response] => Array
+        (
+            [Count] => 242
+            [MerchList] => Array
+                (
+                    [0] => Array
+                        (
+                            [MdIdentityCode] => 101QPD91
+                            [MdName] => (商品)德美亚1
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000001
+                            [MdBarCode] => 101000001
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)0786-1
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [MdIdentityCode] => 101QPF91
+                            [MdName] => 0786-2
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000002
+                            [MdBarCode] => 101000002
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)0786-2
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [MdIdentityCode] => 101QPH91
+                            [MdName] => 236(母本)
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000003
+                            [MdBarCode] => 101000003
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)236(母本)
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [MdIdentityCode] => 101QPJ91
+                            [MdName] => 6011
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000004
+                            [MdBarCode] => 101000004
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)6011
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [MdIdentityCode] => 101QPL91
+                            [MdName] => kf1
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000005
+                            [MdBarCode] => 101000005
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)kf1
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [MdIdentityCode] => 101QPN91
+                            [MdName] => KF-10
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000006
+                            [MdBarCode] => 101000006
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-10
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [MdIdentityCode] => 101QPP91
+                            [MdName] => KF-11
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000007
+                            [MdBarCode] => 101000007
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-11
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [7] => Array
+                        (
+                            [MdIdentityCode] => 101QPR91
+                            [MdName] => KF-2
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000008
+                            [MdBarCode] => 101000008
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-2
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [8] => Array
+                        (
+                            [MdIdentityCode] => 101QPT91
+                            [MdName] => KF-23
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000009
+                            [MdBarCode] => 101000009
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-23
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [9] => Array
+                        (
+                            [MdIdentityCode] => 101QPV91
+                            [MdName] => KF-25
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000010
+                            [MdBarCode] => 101000010
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-25
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [10] => Array
+                        (
+                            [MdIdentityCode] => 101QPX91
+                            [MdName] => KF-26
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000011
+                            [MdBarCode] => 101000011
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-26
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [11] => Array
+                        (
+                            [MdIdentityCode] => 101QPZ91
+                            [MdName] => KF-27
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000012
+                            [MdBarCode] => 101000012
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-27
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [12] => Array
+                        (
+                            [MdIdentityCode] => 101QQ191
+                            [MdName] => KF-28
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000013
+                            [MdBarCode] => 101000013
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-28
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [13] => Array
+                        (
+                            [MdIdentityCode] => 101QQ391
+                            [MdName] => KF-3
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000014
+                            [MdBarCode] => 101000014
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-3
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [14] => Array
+                        (
+                            [MdIdentityCode] => 101QQ591
+                            [MdName] => KF-31
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000015
+                            [MdBarCode] => 101000015
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-31
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [15] => Array
+                        (
+                            [MdIdentityCode] => 101QQ791
+                            [MdName] => KF-4
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000016
+                            [MdBarCode] => 101000016
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-4
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [16] => Array
+                        (
+                            [MdIdentityCode] => 101QQ991
+                            [MdName] => KF-41
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000017
+                            [MdBarCode] => 101000017
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-41
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [17] => Array
+                        (
+                            [MdIdentityCode] => 101QQB91
+                            [MdName] => KF-42
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000018
+                            [MdBarCode] => 101000018
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-42
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [18] => Array
+                        (
+                            [MdIdentityCode] => 101QQD91
+                            [MdName] => KF-45
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000019
+                            [MdBarCode] => 101000019
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-45
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                    [19] => Array
+                        (
+                            [MdIdentityCode] => 101QQF91
+                            [MdName] => KF-46
+                            [MdType] => 101Q9091
+                            [MdCode] => 101000020
+                            [MdBarCode] => 101000020
+                            [MdBusinessPartition] => 
+                            [MdEnabled] => 1
+                            [MdIsComposite] => 0
+                            [MdAllowSale] => 1
+                            [MdIsAssembled] => 0
+                            [MdAllowPurchase] => 1
+                            [MdAllowReturnToSupplier] => 0
+                            [MdIsKjB2CMerch] => 0
+                            [MdLotManage] => 0
+                            [MdLotStrictManage] => 0
+                            [MdUniqueManage] => 0
+                            [MdSalePrice] => 500
+                            [MdPicUri] => 
+                            [MdPicList] => 
+                            [MdUnit] => 101Q9891
+                            [MdDetail] => (商品)KF-46
+                            [MdSortOrder] => 
+                            [MdMaxStockQty] => 
+                            [MdMinReplenishment] => 
+                            [MdSkuList] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

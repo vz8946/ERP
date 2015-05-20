@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0; padding:0;}
+body{font-size:12px; font-family:"宋体",Simsun; line-height:2em;}
+table{border-collapse:collapse; border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,i{ font-style:normal; font-weight:normal;}
+ol,ul,li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+img{ float:left;}
+.fl{ float:left;}
+.fr{ float:right;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+.discount{ width:100%;}
+.bg{ width:100%; overflow:hidden; background:url(bg.jpg) top center no-repeat #d2eff8;}
+.main{ width:990px; overflow:hidden; margin:0 auto; background:#fff;color:#707070; line-height:21px;}
+.title{ width:357px; height:27px; background:#00a0e9; padding:0 12px 0 18px;}
+.title h2{ float:left; color:#ffffff; font-family:"微软雅黑"; font-size:18px; line-height:27px; }
+.title a{ float:right; display:block; width:42px; height:11px; margin-top:8px;}
+.t_img{ width:990px; height:31px;}
+.bd{ clear:both; width:990px; overflow:hidden; margin-bottom:12px;}
+.preview{ float:left; width:559px; height:130px; margin-left:15px; border:1px solid #20acec;border-left:3px solid #00a0e9;}
+.preview .t_img{ width:559px; height:27px; background:#00a0e9;}
+.preview table{ width:559px; color:#707070; line-height:15px;}
+.preview table .txt{ padding:5px 0 0 18px;}
+.articleList{ float:right; width:387px; height:130px; margin-right:8px; border:1px solid #3ab6ee;}
+.articleList ul{ padding:5px 0 0 17px;}
+.articleList ul li,.articleList ul li a{ color:#707070; line-height:21px;}
+.bd02 table{ margin-top:25px; width:100%; color:#707070; font-size:14px; line-height:21px;}
+.bd02 table .txt{ padding:10px 25px 10px 10px; width:508px;}
+.bd02 table .img{ width:400px; height:241px; padding:7px; border:1px solid #e0e0e0;}
+.bd03 .t_img{ margin-bottom:18px;}
+.bd03 li.question{ float:left; display:inline; width:302px; overflow:hidden; margin-bottom:30px; padding:0 13px; border-right:1px dashed #40b8ef;}
+.bd03  ul{ overflow:hidden;}
+.bd03 li.last{ border-right:0;}
+.bd03 li.question .img{ width:300px; overflow:hidden; text-align:center; border:1px solid #e0e0e0;}
+.bd03 li.question .img h3{ clear:both; width:300px; height:26px; background:#b7b7b7; color:#ffffff; line-height:26px; font-weight:bold; font-family:"微软雅黑"; font-size:16px;}
+.bd03 li.question p{ height:206px; color:#707070; font-size:14px; line-height:21px; padding:10px 0;}
+.bd03 li.question p a{ color:#40b8ef;}
+.bd03 li.question .articleList{float:none;  width:302px;}
+.bd03 li.question .articleList .title{ width:272px;}
+.bd04 .pre{ width:920px; overflow:hidden; font-size:14px;  margin:10px auto; background:url(bg_sep.jpg) bottom center no-repeat; padding-bottom:30px;}
+.bd04 li.notice{ width:920px; margin:0 auto 20px; overflow:hidden; padding-bottom:10px; border-bottom:1px dashed #cdcbcb;}
+.bd04 li.notice table p{ width:646px; font-size:14px; line-height:24px; margin-bottom:10px;}
+.bd04 li.notice table p a{color:#40b8ef;}
+.bd04 li.notice .articleList{float:none;  width:646px; }
+.bd04 li.notice .articleList .title{ width:616px;}
+.bd04 li.notice .articleList li{ float:left; display:inline;width:300px;  margin-right:5px;white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden; }
+.bd05 .pre{ width:920px; overflow:hidden; font-size:14px;  margin:10px auto; }
+.bd05 .notice02{ float:left; display:inline; margin:0 6.5px; width:234px; overflow:hidden;}
+.bd05 .notice02 p{ clear:both; height:263px; color:#707070; font-size:14px; background:#d8f1fd; padding:10px; line-height:22px; margin:0 0 8px 2px;}
+.bd05 .notice02 p a{color:#40b8ef;}
+.bd05 .articleList{ float:none; width:232px;}
+.bd05 .articleList .title{ width:202px;}
+.bd06 .t_img{ margin-bottom:16px;}
+.bd06  img{ text-align:center;}
+.bd06 .w_zhuanti{ clear:both; margin-top:14px;}
+.bd06 .w_zhuanti ul{ display:none; width:100%; overflow:hidden;}
+.bd06 .w_zhuanti li { float:left; display:inline;width:232px; overflow:hidden;border:1px solid #6c6a6a; margin:10px 6px;}
+.bd06 .w_zhuanti li .img{ width:232px; height:204px; }
+.bd06 .w_zhuanti li p{ width:232px; height:33px; background:#ff8a00; color:#ffffff; font-family:"微软雅黑"; font-size:14px; line-height:33px; font-weight:bold; text-align:center;}
+.bd07 .w_words{ width:970px; margin:10px auto;}
+.bd07 .w_words .fl{ width:746px;color:#535353; font-size:14px; }
+.bd07 .w_words .fl dl{ width:746px; overflow:hidden; margin-bottom:12px;}
+.bd07 .w_words .fl dt{ width:704px; height:24px; padding:0 20px; line-height:24px; background:#c9eeff; border:1px solid #7fcff4;}
+.bd07 .w_words .fl dt span{ float:left;}
+.bd07 .w_words .fl dt em{float:right;}
+.bd07 .w_words .fl dd{ width:704px; overflow:hidden; border:1px solid #d1eefb; padding:10px 20px; }
+.bd07 .w_words .fl .pagesize{ text-align:right;}
+.bd07 .w_words .fl .pagesize a{ color:#666666; margin:10px 6px;}
+.bd07 .w_words .fl .pagesize a:hover{ color:#f35c03;}
+.bd07 .weibo_attention{ float:left; width:220px; overflow:hidden; background:#f2f2f2;}
+.bd07 .weibo_attention table{ width:220px; height:85px; color:#7e7e7e; margin:25px 0px 15px 0;}
+.bd07 .weibo_attention .weibo_code{ width:100%; border-top:1px solid #d9d9d9; padding:10px 0; text-align:center; color:#666;}
+.bd07 .weibo_attention .weibo_code img{ float:none;}
+.bd07 .weibo_attention .weibo_code em{ color:#ff0000;}
+.bd08 { margin-bottom:60px;}
+.bd08 .w_idea{ width:974px; overflow:hidden; margin:13px auto;}
+.bd08 .w_idea .fl{ width:544px;}
+.bd08 .w_idea .fr{ width:370px;}
+.bd08 .title_idea h4{ float:left; margin-right:10px;}
+.bd08 .fl textarea{ clear:both; width:522px; height:100px; border:1px solid #80d1f5; padding:10px;}
+.bd08 .fr input{ width:158px; height:26px; border:1px solid #e9e9e9; line-height:26px; padding:0 5px; margin:10px;}
+.bd08 .fr a{ color:#434343; font-size:14px; font-weight:bold;}
+.bd08 .fr p{ height:auto; padding:35px 0;}
+.bd08 .fr p em{ float:left; color:#00a0e9; font-size:14px; font-weight:bold;}
+.bd08 .fr p b{ float:right; color:#707070; font-size:14px; font-weight:bold;}

@@ -1,0 +1,36 @@
+.promote{width:1200px;margin:0 auto;background:#fef9e6;}
+/*.promote .promote_banner img{ vertical-align:top;width:1200px; overflow:hidden;}
+.promote .promote_banner {margin-bottom:10px;}*/
+.promote .promote_sort {width:962px;margin:0px auto 0px auto;padding-bottom:10px;}
+.promote .promote_sort h2{background:url(../images/promote_heading.gif) no-repeat 0 0;height:24px;color:#fff; font-size:14px;padding-left:20px; padding-top:13px;font-weight:bold;}
+.promote .promote_sort .list{width:950px;margin:0 auto;background:#fff; overflow:hidden;zoom:1;padding-top:20px;}
+.promote .promote_sort .list ul{}
+/*.promote .promote_sort .list li{width:144px;border:1px solid #ccc;float:left;display:inline;margin-left:20px;margin-bottom:20px;padding:0 10px;}
+.promote .promote_sort .list li .pic{ text-align:center;margin-top:10px;position:relative;height:120px;}
+.promote .promote_sort .list li .pic img{ vertical-align:top;width:120px;height:120px; overflow:hidden;}
+.promote .promote_sort .list li .title{margin-top:5px;height:36px;line-height:18px; overflow:hidden;}
+.promote .promote_sort .list li .price{margin-bottom:10px; line-height:18px;color:#999;font-family: Arial;}
+.promote .promote_sort .list li .price b{color:#cc0000;}*/
+.hotCommend{background: url(../images/hot_recommIcon.png) no-repeat 0 0;bottom: 5px;height: 49px;overflow: hidden;position: absolute;right: 0;width: 49px;}
+
+
+.order{ border:#dedede 1px solid; padding-bottom:10px;}
+.order .mt{ width:210px; height:65px; margin:0 auto;}
+.order .mt h2{ background:url(../images/ztorder_title.gif) no-repeat; height:65px; text-indent:-999em;}
+.mc_l{ float:left; border-right:#d6d5d5 1px solid;  width:499px; height:672px;overflow-x: hidden;}/*background:url(../images/ztorder_process.gif) no-repeat;*/
+.mc_r{ float:left; width:488px;}
+.order_phone{  height:auto;width:440px; display:block;overflow: hidden;margin-left: 35px;}/*background:url(../images/ztorder_phone.gif) no-repeat;*/
+.online_order{ margin:0 0 0 34px;}
+.online_order .tips{ line-height:20px; color:#545353;}
+.field{ width:100%; overflow:hidden; margin-top:10px; color:#545353;}
+.field span{ color:#a20d20;}
+.field input{ width:112px; color:#545353; border:#c4c4c4 1px solid; height:18px; line-height:18px; padding-left:3px;}
+.field input.put2{ width:286px;}
+.field select{ width:108px;}
+.field .f2{ color:#a9a9a9;}
+.submit{ width:160px; height:41px; margin:25px auto 0;}
+.submit button{ background:url(../images/ztorder_submit.gif) no-repeat; width:160px; height:41px; border:0; cursor:pointer;}
+.order_t1{ margin-left:34px;}
+.order_t1 a{ width:96px; height:28px; background:url(../images/ztorder_t1.gif) no-repeat; display:block;}
+.order_t2{ margin:0 0 10px 34px;}
+.order_t2 a{ width:96px; height:28px; background:url(../images/ztorder_t2.gif) no-repeat; display:block;}
